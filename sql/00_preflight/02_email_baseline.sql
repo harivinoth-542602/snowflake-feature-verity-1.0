@@ -1,0 +1,13 @@
+-- READ ONLY: Baseline evidence for the initial automatic profile test.
+-- This counts ordinary leading/trailing spaces, not all Unicode whitespace.
+SELECT COUNT(*) AS TOTAL_RECORDS,
+       COALESCE(COUNT_IF(EMAIL IS NULL),0) AS NULL_EMAILS,
+       COALESCE(COUNT_IF(EMAIL IS NOT NULL AND TRIM(EMAIL) = ''),0) AS BLANK_EMAILS,
+       COALESCE(COUNT_IF(EMAIL IS NOT NULL AND EMAIL <> TRIM(EMAIL)),0) AS EDGE_SPACE_ROWS,
+       COUNT(DISTINCT EMAIL) AS DISTINCT_EMAIL_VALUES
+FROM VERITY_V2.PRACTICE.DEMO_CUSTOMER_DQ;
+
+-- Only run if the role is permitted to inspect individual demo values.
+-- SELECT CUSTOMER_ID, EMAIL, TRIM(EMAIL) AS SUGGESTED_EMAIL
+-- FROM VERITY_V2.PRACTICE.DEMO_CUSTOMER_DQ
+-- WHERE EMAIL IS NOT NULL AND EMAIL <> TRIM(EMAIL);

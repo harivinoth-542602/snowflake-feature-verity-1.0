@@ -1,0 +1,10 @@
+-- READ ONLY: Reference query to compare with future profiler output.
+SELECT
+    COUNT(*) TOTAL_ROWS,
+    COUNT(EMAIL) NON_NULL_EMAIL_ROWS,
+    COALESCE(COUNT_IF(EMAIL IS NULL),0) NULL_ROWS,
+    COALESCE(COUNT_IF(EMAIL IS NOT NULL AND TRIM(EMAIL)=''),0) BLANK_ROWS,
+    COALESCE(COUNT_IF(EMAIL IS NOT NULL AND EMAIL <> TRIM(EMAIL)),0) EDGE_SPACE_ROWS
+FROM VERITY_V2.PRACTICE.DEMO_CUSTOMER_DQ;
+
+-- Report only aggregate values to the Cortex Agent, not raw email content.
