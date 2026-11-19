@@ -4,9 +4,13 @@
 **Target:** 20 November 2026  
 **Pilot:** one Snowflake project; structured tables only
 
-## Problem statement
+## Problem statement(
 
 Existing build-time tests prove that **configured** tests passed at a point in time. They cannot guarantee the absence of unexpected formatting issues, suspicious numeric values, or other unconfigured problems. Isolated project rules also complicate governance and evidence collection.
+Verity will better and faster test, its tool (snowflake native testing tool) which will help validate the data for dataeng
+data coverage
+wht is verity why need 
+how verity solve the prblm scope1 
 
 ## Vision and differentiator
 
