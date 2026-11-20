@@ -12,7 +12,7 @@ Data engineers spend significant time writing, executing, and maintaining data-q
 
 **Verity V1.0** addresses these challenges through a Snowflake-native, AI-assisted data-quality framework that automates profiling, recommends additional validation rules, improves test coverage, reduces manual effort, and centralizes validation and monitoring.
 
-**Key message to management:** Verity aims to **reduce data-quality testing effort, improve test coverage, and simplify testing across multiple projects without relying on multiple external tools.**
+**Key message:** Verity aims to **reduce data-quality testing effort, improve test coverage, and simplify testing across multiple projects without relying on multiple external tools.**
 
 Actual time and coverage improvements will be demonstrated through measurable pilot results.
 
