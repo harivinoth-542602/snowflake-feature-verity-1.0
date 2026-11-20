@@ -16,20 +16,6 @@ Data engineers spend significant time writing, executing, and maintaining data-q
 
 Actual time and coverage improvements will be demonstrated through measurable pilot results.
 
-## Why customers would choose Verity
-
-| Customer concern | Verity response | Honest limitation |
-|---|---|---|
-| "Test writing and execution take too long" | One onboarding and profiling flow, reusable rules, post-load validation and consolidated results reduce repeated **human setup** work | Actual end-to-end time savings and compute latency remain unmeasured |
-| "How do I improve test coverage?" | Systematic profiling, six executable mandatory rule types, evidence-backed supported recommendations and Steward review | AI does not discover all domain rules; broader coverage must be scored against an approved requirements list |
-| "Snowflake already has DMFs" | Leverage Snowflake native capabilities and add a **rule lifecycle and operations layer** | DMFs include extensive built-in and user-defined functions; the 40/60 claim is not a Snowflake limit |
-| "We already have dbt and external tools" | Verity provides shared Snowflake-side profiling, quality history and governance across approved tables, including dbt outputs | dbt model testing and external platform features can remain complementary |
-| "How do we scale to more teams?" | Central CONFIG/ENGINE/RESULTS/MONITORING objects, Git install flow, scoped project roles | Source-scoping/RBAC and unattended scheduler safeguards require final hardening |
-
-### The 40% / 60% illustration
-
-If a **customer's verified requirement list** contains 100 checks and the team initially maps 40 to its chosen built-in checks, 60 remain to author/review. **That split measures the customer's current workload only.** It does not mean Snowflake DMFs have a 40% technical coverage ceiling. Snowflake provides a broad DMF catalog and custom DMFs. Verity's opportunity is making requirement discovery, DRAFT creation, human approvals, validation and monitoring repeatable regardless of whether the check uses SQL or a DMF.
-
 ## Architecture (business view)
 
 ```mermaid
